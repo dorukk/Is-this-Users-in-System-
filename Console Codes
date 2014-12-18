@@ -1,0 +1,25 @@
+string[] users = { "Jack", "Matthew", "Clark", "Jason", "Mary" };
+
+
+            Console.Write("Please Enter Your Name: ");
+            string name = Console.ReadLine();
+            bool inhere = false;
+
+            for (int i = 0; i <users.Length ; i++)
+            {
+                if (users[i] == name)
+                {
+                    inhere = true;
+                    break;
+                }
+                
+            }
+            if (inhere == true)
+            {
+                Console.WriteLine("Access Allowed!");
+            }
+            if (inhere == false)
+            {
+                Console.WriteLine("Access Denied!");
+            }
+            Console.ReadKey();
